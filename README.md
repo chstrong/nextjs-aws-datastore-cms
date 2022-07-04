@@ -32,3 +32,45 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+https://www.youtube.com/watch?v=bQ1Giqn5G38
+
+# Install Tailwind
+
+```
+npm install tailwindcss@latest postcss@latest autoprefixer@latest @tailwindcss/typography
+```
+
+Now update tailwind.config.js to add the Tailwind typography plugin to the array of plugins:
+
+```
+plugins: [
+  require('@tailwindcss/typography')
+],
+```
+
+And add the required content configuration:
+
+```
+  content: [
+    './pages/**/*.{html,js}',
+    './components/**/*.{html,js}',
+  ],
+```
+
+Finally, replace the styles in styles/globals.css with the following:
+
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+# Navbar
+
+https://www.youtube.com/watch?v=C04gD3YnwPA&t=339s
+
+# MUI
+
+https://dev.to/hajhosein/nextjs-mui-v5-tutorial-2k35
+https://github.com/mui/material-ui/tree/master/examples/nextjs
